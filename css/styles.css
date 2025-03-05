@@ -1,0 +1,214 @@
+/*-----------------------------------
+Reset
+-------------------------------------*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*-----------------------------------
+base
+-------------------------------------*/
+
+body{
+    font: normal normal 1.8rem/1.2 'Roboto', sans-serif;
+}
+
+/*-----------------------------------------
+Mise en page
+-----------------------------------------*/
+
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto 0 auto;
+}
+
+/*----------------------------------
+Modules
+------------------------------------*/
+
+/*------header------*/
+
+header{
+    background-color: #379AE3;
+}
+
+header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header ul li a{
+    color: #000;
+    font: bold 1.8rem 'Roboto', sans-serif;
+
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #fff;
+}
+
+header .bouton{
+    color: #000;
+    font: bold 1.8rem 'Roboto', sans-serif;
+    padding: 7px 25px 7px 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+
+    text-decoration: none;
+}
+
+/*------hero------*/
+
+.hero {
+    background: url('../images/hero.jpg') no-repeat top center/cover;
+}
+
+.hero .wrapper{
+    display: flex;
+    height: 640px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero .texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+
+    background-color: rgb(0 0 0 / 70%);
+    height: 440px;
+    border-radius: 20px;
+    color: #fff;
+    font: bold 2rem 'Roboto', sans-serif;
+}
+
+.hero h1{
+    margin: 0px;
+    padding-top: 30px;
+    color: #E67522;
+    font: 400 6.4rem 'Merriweather', serif;
+}
+.hero p{
+    margin: 85px 0px 70px 0px;
+}
+
+.hero .btn{
+    color: #fff;
+    border: 1px solid #E67522;
+    background-color: #E67522;
+    border-radius: 5px;
+    padding: 7px 40px 7px 40px;
+
+    text-decoration: none;
+}
+
+/*------------contenu-----------*/
+
+.contenu{
+    background-color: #E6EDF1;
+    height: 1240px;
+}
+
+.contenu .titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font: normal 1.8rem 'Roboto', sans-serif;
+}
+
+.contenu .bike{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 786px;
+}
+
+.contenu h2{
+    margin: 0px;
+    font: 400 6.4rem 'Merriweather', serif;
+}
+
+.contenu .bouton2{
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    background-color: #E67522;
+
+    text-decoration: none;
+}
+
+
+/*---------footer-------*/
+
+footer{
+    background-color: #CCDAE3;
+    height: 270px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p{
+    margin: 0px;
+
+    font: 350 1.4rem 'Roboto', sans-serif;
+}
+
+/*---------modale--------*/
+
+.modale{
+    align-items: center;
+    height: 300px;
+    padding: 0px 300px 0px 300px;
+    display: none;
+    background-color: rgb(0, 0, 0);
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modale .wrapper{
+    background-color: #fff;
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modale.visible{
+    display: flex;
+}
